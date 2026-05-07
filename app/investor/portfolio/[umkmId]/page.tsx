@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { TxnKind } from "@prisma/client";
+import { TxnKind } from "@/lib/enums";
 import { requireRole } from "@/lib/rbac";
 import { prisma } from "@/lib/prisma";
 import { anonymizeCounterparty } from "@/lib/anonymize";

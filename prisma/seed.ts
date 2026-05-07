@@ -1,4 +1,5 @@
-import { PrismaClient, Role, Sector, TxnKind, PitchStatus } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
+import { Role, Sector, TxnKind, PitchStatus } from "../lib/enums";
 import bcrypt from "bcryptjs";
 
 const prisma = new PrismaClient();

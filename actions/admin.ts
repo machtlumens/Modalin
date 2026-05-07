@@ -1,7 +1,7 @@
 "use server";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
-import { TxnKind, ReimbursementStatus, PitchStatus } from "@prisma/client";
+import { TxnKind, ReimbursementStatus, PitchStatus } from "@/lib/enums";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 

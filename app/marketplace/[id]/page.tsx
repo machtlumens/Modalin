@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { TxnKind } from "@prisma/client";
+import { TxnKind } from "@/lib/enums";
 import { prisma } from "@/lib/prisma";
 import { scoreUMKM } from "@/lib/ai/scorer";
 import { Badge } from "@/components/ui/badge";

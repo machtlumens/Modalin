@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { TxnKind } from "@prisma/client";
+import { TxnKind } from "@/lib/enums";
 import { prisma } from "@/lib/prisma";
 
 const inflowChannels = ["QRIS", "Transfer", "QRIS"];

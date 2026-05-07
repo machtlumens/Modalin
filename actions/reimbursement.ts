@@ -1,7 +1,7 @@
 "use server";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
-import { TxnKind, ReimbursementStatus } from "@prisma/client";
+import { TxnKind, ReimbursementStatus } from "@/lib/enums";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import { validateReimbursement, type ReimbursementCategory } from "@/lib/ai/price-validator";

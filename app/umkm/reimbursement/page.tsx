@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ReimbursementStatus } from "@prisma/client";
+import { ReimbursementStatus } from "@/lib/enums";
 import { requireRole } from "@/lib/rbac";
 import { prisma } from "@/lib/prisma";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -57,7 +57,7 @@ export default async function ReimbursementListPage() {
               </thead>
               <tbody>
                 {items.map((r) => {
-                  const b = statusBadge[r.status];
+                  const b = statusBadge[r.status as ReimbursementStatus] ?? statusBadge.PENDING_ADMIN_REVIEW;
                   return (
                     <tr key={r.id} className="border-b border-zinc-100 last:border-0">
                       <td className="py-3 text-zinc-600">{r.createdAt.toLocaleDateString("id-ID")}</td>

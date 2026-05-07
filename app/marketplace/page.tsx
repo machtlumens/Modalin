@@ -1,4 +1,4 @@
-import { Prisma, Sector } from "@prisma/client";
+import type { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 import { FilterRail } from "@/components/marketplace/filter-rail";
 import { UMKMCard } from "@/components/marketplace/umkm-card";
@@ -14,7 +14,7 @@ export default async function MarketplacePage({
   searchParams: Promise<Record<string, string | undefined>>;
 }) {
   const sp = await searchParams;
-  const sectorList = (sp.sector ?? "").split(",").filter(Boolean) as Sector[];
+  const sectorList = (sp.sector ?? "").split(",").filter(Boolean);
   const minScore = Number(sp.minScore ?? 0);
   const syariah = sp.syariah === "1";
   const sort = sp.sort ?? "score";

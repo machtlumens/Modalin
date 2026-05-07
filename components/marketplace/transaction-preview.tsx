@@ -1,3 +1,4 @@
+"use client";
 import { BarList } from "@tremor/react";
 import { formatIDRCompact } from "@/lib/money";
 
