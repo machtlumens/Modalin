@@ -16,7 +16,7 @@ export function FinalCTA() {
           <Button asChild size="lg" variant="accent">
             <Link href="/marketplace">Mulai Investasi</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-brand-900">
+          <Button asChild size="lg" variant="outline" className="border-white !bg-transparent text-white hover:!bg-white hover:text-brand-900">
             <Link href="/untuk-umkm">Daftarkan UMKM</Link>
           </Button>
         </div>

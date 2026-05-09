@@ -68,7 +68,7 @@ export default async function UMKMDashboard() {
         </div>
         <div className="flex flex-wrap gap-2">
           <Button asChild variant="accent"><Link href="/umkm/reimbursement/new">Tarik Reimbursement</Link></Button>
-          <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-brand-900">
+          <Button asChild variant="outline" className="border-white !bg-transparent text-white hover:!bg-white hover:text-brand-900">
             <Link href="/umkm/pitch">Edit Pitch</Link>
           </Button>
         </div>
